@@ -1,0 +1,220 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #020617;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* ================= TOPO ================= */
+.topo {
+  background: linear-gradient(135deg, #064e3b, #065f46);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.topo h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.topo p {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #a7f3d0;
+}
+
+/* ================= INTRO ================= */
+.intro {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 1.05rem;
+  color: #cbd5e1;
+}
+
+/* ================= BUSCA ================= */
+.filtro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.filtro input {
+  width: 90%;
+  max-width: 420px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  font-size: 1rem;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.filtro input::placeholder {
+  color: #94a3b8;
+}
+
+/* ================= GRID ================= */
+.grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: #020617;
+  border-radius: 18px;
+  padding: 24px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.7);
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #ecfeff;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+/* LISTA DENTRO DOS CARDS */
+.card ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.card ul li {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 6px;
+}
+
+/* ================= BOTÃO ================= */
+.btn {
+  display: block;
+  margin-top: 16px;
+  padding: 14px;
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: #ecfeff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 14px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(16,185,129,0.4);
+}
+
+/* ================= MONETIZAÇÃO ================= */
+.monetizacao {
+  background: #020617;
+  margin: 90px auto;
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1000px;
+  border-radius: 24px;
+  border: 1px solid #1e293b;
+}
+
+.monetizacao h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.monetizacao p {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.monetizacao .links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 30px;
+  background: #059669;
+  color: #ecfeff;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.monetizacao .links a:hover {
+  background: #10b981;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #020617;
+  color: #64748b;
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid #1e293b;
+  margin-top: 80px;
+}
+
+footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ================= COOKIES ================= */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #020617;
+  border-top: 1px solid #1e293b;
+  color: #e5e7eb;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  font-size: 0.9rem;
+}
+
+.cookie-banner a {
+  color: #38bdf8;
+}
+
+.cookie-banner button {
+  background: #22c55e;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cookie-banner button:hover {
+  background: #16a34a;
+}
